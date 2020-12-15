@@ -24,35 +24,35 @@ import {
 
 import {
   IDiffEntry
-} from 'nbdime/lib/diff/diffentries';
+} from '@datalayer-jupyter/nbdime/lib/diff/diffentries';
 
 import {
   NotebookDiffModel
-} from 'nbdime/lib/diff/model';
+} from '@datalayer-jupyter/nbdime/lib/diff/model';
 
 import {
   NotebookDiffWidget, CELLDIFF_CLASS
-} from 'nbdime/lib/diff/widget';
+} from '@datalayer-jupyter/nbdime/lib/diff/widget';
 
 import {
   UNCHANGED_DIFF_CLASS, CHUNK_PANEL_CLASS
-} from 'nbdime/lib/diff/widget/common';
+} from '@datalayer-jupyter/nbdime/lib/diff/widget/common';
 
 import {
   requestApiJson
-} from 'nbdime/lib/request';
+} from '@datalayer-jupyter/nbdime/lib/request';
 
 
 
 /**
  * Class of the outermost widget, the draggable tab
  */
-const NBDIME_CLASS = 'nbdime-Widget'
+const NBDIME_CLASS = '@datalayer-jupyter/nbdime-Widget'
 
 /**
  * Class of the root of the actual diff, the scroller element
  */
-const ROOT_CLASS = 'nbdime-root'
+const ROOT_CLASS = '@datalayer-jupyter/nbdime-root'
 
 /**
  * DOM class for whether or not to hide unchanged cells
@@ -103,7 +103,7 @@ class NbdimeWidget extends Panel {
 
     requestApiJson(
       ServerConnection.makeSettings().baseUrl,
-      'nbdime/api/diff',
+      '@datalayer-jupyter/nbdime/api/diff',
       args,
       this.onData.bind(this),
       this.onError.bind(this));
@@ -232,7 +232,7 @@ namespace Private {
     }
 
     let node = document.createElement('div');
-    node.className = 'nbdime-Diff';
+    node.className = '@datalayer-jupyter/nbdime-Diff';
     node.innerHTML = `
       <div class="nbdime-header-buttonrow">
         <label><input class="nbdime-hide-unchanged" type="checkbox">Hide unchanged cells</label>

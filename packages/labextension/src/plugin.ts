@@ -51,7 +51,7 @@ import {
 } from './actions';
 
 
-const pluginId = 'nbdime-jupyterlab:plugin';
+const pluginId = '@datalayer-jupyter/nbdime-jupyterlab:plugin';
 
 /**
  * Error message if the nbdime API is unavailable.
@@ -119,13 +119,13 @@ export
 namespace CommandIDs {
 
   export
-  const diffNotebook = 'nbdime:diff';
+  const diffNotebook = '@datalayer-jupyter/nbdime:diff';
 
   export
-  const diffNotebookGit = 'nbdime:diff-git';
+  const diffNotebookGit = '@datalayer-jupyter/nbdime:diff-git';
 
   export
-  const diffNotebookCheckpoint = 'nbdime:diff-checkpoint';
+  const diffNotebookCheckpoint = '@datalayer-jupyter/nbdime:diff-checkpoint';
 
 }
 
