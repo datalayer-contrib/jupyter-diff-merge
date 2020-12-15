@@ -1,5 +1,5 @@
 {
-  "name": "nbdime-jupyterlab",
+  "name": "@datalayer-jupyter/nbdime-jupyterlab",
   "version": "3.0.0",
   "description": "A JupyterLab extension for showing Notebook diffs.",
   "keywords": [
