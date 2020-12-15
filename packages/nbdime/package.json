@@ -1,5 +1,6 @@
 {
-  "name": "nbdime",
+  "name": "@datalayer-jupyter/nbdime",
+  "private": false,
   "version": "7.0.0",
   "description": "Diff and merge of Jupyter Notebooks",
   "repository": {
